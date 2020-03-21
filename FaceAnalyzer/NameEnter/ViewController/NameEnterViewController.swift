@@ -20,19 +20,32 @@ class NameEnterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configure()
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+private extension NameEnterViewController {
+    
+    func configure() {
+        hideNavigationBar()
+        configureContinueButtonAction()
+        configureEnterNameTextField()
     }
-    */
-
+    
+    func hideNavigationBar() {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func configureContinueButtonAction() {
+        continueButtonAction.layer.cornerRadius = 27
+        continueButtonAction.layer.borderWidth = 1
+        continueButtonAction.layer.borderColor = UIColor(red: 146 / 255, green: 88 / 255, blue: 154 / 255, alpha: 1).cgColor
+        
+    }
+    
+    func configureEnterNameTextField() {
+        enterNameTextField.becomeFirstResponder()
+    }
+    
 }

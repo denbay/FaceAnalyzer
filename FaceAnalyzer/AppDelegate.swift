@@ -31,9 +31,18 @@ private extension AppDelegate {
     }
     
     func setupRootViewController() {
+        let storyboard = UIStoryboard(name: "NameEnter", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "NameEnterViewController") as! NameEnterViewController
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
-        window?.makeKeyAndVisible()
+        
+        let navigationController = UINavigationController(rootViewController: mainVC)
+        
+        if let window = window {
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+        }
+       
     }
     
 }
