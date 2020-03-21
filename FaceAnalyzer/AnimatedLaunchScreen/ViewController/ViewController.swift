@@ -23,13 +23,18 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         logoAnimationView.logoGifImageView.startAnimatingGif()
+
     }
     
 }
 
 extension ViewController: SwiftyGifDelegate {
+    
     func gifDidStop(sender: UIImageView) {
         logoAnimationView.isHidden = true
+        let nextVC = NameEnterViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    
     }
 }
 
