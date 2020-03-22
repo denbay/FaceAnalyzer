@@ -37,7 +37,7 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="KARA" textAlignment="center" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="8Bg-Of-Dzq">
                                 <rect key="frame" x="149" y="277" width="77" height="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="1" green="0.78915501853260595" blue="0.20958257369622069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>

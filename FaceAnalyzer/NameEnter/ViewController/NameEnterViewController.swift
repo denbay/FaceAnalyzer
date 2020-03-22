@@ -31,6 +31,7 @@ private extension NameEnterViewController {
         hideNavigationBar()
         configureContinueButtonAction()
         configureEnterNameTextField()
+        editContinueButtonAction()
     }
     
     func hideNavigationBar() {
@@ -46,6 +47,24 @@ private extension NameEnterViewController {
     
     func configureEnterNameTextField() {
         enterNameTextField.becomeFirstResponder()
+        enterNameTextField.attributedPlaceholder = NSAttributedString(string: "KARA", attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 99 / 255, green: 0 / 255, blue: 104 / 255, alpha: 1)])
     }
+    
+    func editContinueButtonAction() {
+        if enterNameTextField.text?.isEmpty == true {
+            continueButtonAction.setTitleColor(.white, for: .normal)
+            continueButtonAction.backgroundColor = UIColor(red: 243 / 255, green: 129 / 255, blue: 11 / 255, alpha: 1)
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.frame = continueButtonAction.bounds
+            continueButtonAction.layer.insertSublayer(gradientLayer, at: 0)
+            let backgroundColor = UIColor(red: 243 / 255, green: 129 / 255, blue: 11 / 255, alpha: 1)
+            let bottomGradientColor = UIColor(red: 231 / 255, green: 181 / 255, blue: 46 / 255, alpha: 1)
+            gradientLayer.colors = [backgroundColor.cgColor, bottomGradientColor.cgColor]
+            gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+            gradientLayer.cornerRadius = 27
+    }
+    
+  }
     
 }
