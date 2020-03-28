@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4887B4DF242BF962004D5153 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B4DE242BF962004D5153 /* ContentManager.swift */; };
+		4887B4E1242BF977004D5153 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B4E0242BF977004D5153 /* DataBaseManager.swift */; };
+		4887B4E7242F9BAE004D5153 /* Subscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4887B4E6242F9BAE004D5153 /* Subscription.storyboard */; };
+		4887B4E9242FB103004D5153 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B4E8242FB103004D5153 /* SubscriptionViewController.swift */; };
 		48D0AD722425FA1700E69E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0AD712425FA1700E69E92 /* AppDelegate.swift */; };
 		48D0AD762425FA1700E69E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0AD752425FA1700E69E92 /* ViewController.swift */; };
 		48D0AD7B2425FA1900E69E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D0AD7A2425FA1900E69E92 /* Assets.xcassets */; };
@@ -16,11 +20,21 @@
 		48D0AD92242632DE00E69E92 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48D0AD91242632DE00E69E92 /* logo.gif */; };
 		48D0AD9924264F8900E69E92 /* NameEnter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D0AD9824264F8900E69E92 /* NameEnter.storyboard */; };
 		48D0AD9B2426595300E69E92 /* NameEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0AD9A2426595300E69E92 /* NameEnterViewController.swift */; };
+		48D0ADA024275FA400E69E92 /* ChooseZodiak.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D0AD9F24275FA400E69E92 /* ChooseZodiak.storyboard */; };
+		48D0ADA22427615000E69E92 /* ChoozeZodiakCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0ADA12427615000E69E92 /* ChoozeZodiakCollectionViewController.swift */; };
+		48D0ADA62427A82B00E69E92 /* ChooseZodiakCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0ADA52427A82B00E69E92 /* ChooseZodiakCollectionViewCell.swift */; };
+		48D0ADA82427A85E00E69E92 /* ZodiakModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0ADA72427A85E00E69E92 /* ZodiakModel.swift */; };
+		48D0ADAD2427BDE900E69E92 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0ADAC2427BDE900E69E92 /* HeaderCollectionReusableView.swift */; };
+		48D0ADAF2427BDF500E69E92 /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0ADAE2427BDF500E69E92 /* FooterCollectionReusableView.swift */; };
 		88830D4462A7B62D290D93E2 /* Pods_FaceAnalyzer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F53B8BAEAC19E72668FC83 /* Pods_FaceAnalyzer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00964BCB3063EDC1BEADCD23 /* Pods-FaceAnalyzer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAnalyzer.release.xcconfig"; path = "Target Support Files/Pods-FaceAnalyzer/Pods-FaceAnalyzer.release.xcconfig"; sourceTree = "<group>"; };
+		4887B4DE242BF962004D5153 /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		4887B4E0242BF977004D5153 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		4887B4E6242F9BAE004D5153 /* Subscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscription.storyboard; sourceTree = "<group>"; };
+		4887B4E8242FB103004D5153 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
 		48D0AD6E2425FA1700E69E92 /* FaceAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D0AD712425FA1700E69E92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48D0AD752425FA1700E69E92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +46,12 @@
 		48D0AD91242632DE00E69E92 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		48D0AD9824264F8900E69E92 /* NameEnter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NameEnter.storyboard; sourceTree = "<group>"; };
 		48D0AD9A2426595300E69E92 /* NameEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameEnterViewController.swift; sourceTree = "<group>"; };
+		48D0AD9F24275FA400E69E92 /* ChooseZodiak.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseZodiak.storyboard; sourceTree = "<group>"; };
+		48D0ADA12427615000E69E92 /* ChoozeZodiakCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoozeZodiakCollectionViewController.swift; sourceTree = "<group>"; };
+		48D0ADA52427A82B00E69E92 /* ChooseZodiakCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseZodiakCollectionViewCell.swift; sourceTree = "<group>"; };
+		48D0ADA72427A85E00E69E92 /* ZodiakModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiakModel.swift; sourceTree = "<group>"; };
+		48D0ADAC2427BDE900E69E92 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		48D0ADAE2427BDF500E69E92 /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
 		74B44EA89E55AA8F62914D62 /* Pods-FaceAnalyzer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAnalyzer.debug.xcconfig"; path = "Target Support Files/Pods-FaceAnalyzer/Pods-FaceAnalyzer.debug.xcconfig"; sourceTree = "<group>"; };
 		E6F53B8BAEAC19E72668FC83 /* Pods_FaceAnalyzer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceAnalyzer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -48,6 +68,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4887B4DD242BF927004D5153 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4887B4DE242BF962004D5153 /* ContentManager.swift */,
+				4887B4E0242BF977004D5153 /* DataBaseManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4887B4E2242F9AE2004D5153 /* Subscription  */ = {
+			isa = PBXGroup;
+			children = (
+				4887B4E5242F9B01004D5153 /* Storyboard  */,
+				4887B4E4242F9AF7004D5153 /* ViewController */,
+				4887B4E3242F9AF1004D5153 /* Manager */,
+			);
+			path = "Subscription ";
+			sourceTree = "<group>";
+		};
+		4887B4E3242F9AF1004D5153 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4887B4E4242F9AF7004D5153 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4887B4E8242FB103004D5153 /* SubscriptionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4887B4E5242F9B01004D5153 /* Storyboard  */ = {
+			isa = PBXGroup;
+			children = (
+				4887B4E6242F9BAE004D5153 /* Subscription.storyboard */,
+			);
+			path = "Storyboard ";
+			sourceTree = "<group>";
+		};
 		48D0AD652425FA1700E69E92 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +131,8 @@
 		48D0AD702425FA1700E69E92 /* FaceAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				4887B4E2242F9AE2004D5153 /* Subscription  */,
+				48D0AD9C2427598F00E69E92 /* ChooseZodiak */,
 				48D0AD9524264ECE00E69E92 /* NameEnter */,
 				48D0AD852425FC4200E69E92 /* AnimatedLaunchScreen */,
 				48D0AD712425FA1700E69E92 /* AppDelegate.swift */,
@@ -137,6 +201,60 @@
 				48D0AD9A2426595300E69E92 /* NameEnterViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48D0AD9C2427598F00E69E92 /* ChooseZodiak */ = {
+			isa = PBXGroup;
+			children = (
+				4887B4DD242BF927004D5153 /* Manager */,
+				48D0ADA92427BB6900E69E92 /* ReusableView */,
+				48D0ADA42427A7FB00E69E92 /* Model */,
+				48D0ADA32427A7EE00E69E92 /* Cell */,
+				48D0AD9E24275DB500E69E92 /* ViewController */,
+				48D0AD9D24275DA300E69E92 /* Storyboard */,
+			);
+			path = ChooseZodiak;
+			sourceTree = "<group>";
+		};
+		48D0AD9D24275DA300E69E92 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48D0AD9F24275FA400E69E92 /* ChooseZodiak.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		48D0AD9E24275DB500E69E92 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48D0ADA12427615000E69E92 /* ChoozeZodiakCollectionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48D0ADA32427A7EE00E69E92 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				48D0ADA52427A82B00E69E92 /* ChooseZodiakCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		48D0ADA42427A7FB00E69E92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48D0ADA72427A85E00E69E92 /* ZodiakModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48D0ADA92427BB6900E69E92 /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				48D0ADAC2427BDE900E69E92 /* HeaderCollectionReusableView.swift */,
+				48D0ADAE2427BDF500E69E92 /* FooterCollectionReusableView.swift */,
+			);
+			path = ReusableView;
 			sourceTree = "<group>";
 		};
 		D1107D2249B1A5DF53D0FFBA /* Pods */ = {
@@ -217,7 +335,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D0AD7E2425FA1900E69E92 /* LaunchScreen.storyboard in Resources */,
+				48D0ADA024275FA400E69E92 /* ChooseZodiak.storyboard in Resources */,
 				48D0AD92242632DE00E69E92 /* logo.gif in Resources */,
+				4887B4E7242F9BAE004D5153 /* Subscription.storyboard in Resources */,
 				48D0AD7B2425FA1900E69E92 /* Assets.xcassets in Resources */,
 				48D0AD9924264F8900E69E92 /* NameEnter.storyboard in Resources */,
 			);
@@ -272,11 +392,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D0ADA22427615000E69E92 /* ChoozeZodiakCollectionViewController.swift in Sources */,
+				48D0ADAD2427BDE900E69E92 /* HeaderCollectionReusableView.swift in Sources */,
 				48D0AD762425FA1700E69E92 /* ViewController.swift in Sources */,
 				48D0AD8B2425FD4800E69E92 /* LogoConstraints.swift in Sources */,
+				4887B4E1242BF977004D5153 /* DataBaseManager.swift in Sources */,
+				4887B4DF242BF962004D5153 /* ContentManager.swift in Sources */,
 				48D0AD722425FA1700E69E92 /* AppDelegate.swift in Sources */,
 				48D0AD9B2426595300E69E92 /* NameEnterViewController.swift in Sources */,
+				48D0ADAF2427BDF500E69E92 /* FooterCollectionReusableView.swift in Sources */,
 				48D0AD882425FCC500E69E92 /* LogoAnimationView.swift in Sources */,
+				4887B4E9242FB103004D5153 /* SubscriptionViewController.swift in Sources */,
+				48D0ADA62427A82B00E69E92 /* ChooseZodiakCollectionViewCell.swift in Sources */,
+				48D0ADA82427A85E00E69E92 /* ZodiakModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWJKXUQ8NH;
 				INFOPLIST_FILE = FaceAnalyzer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -433,6 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWJKXUQ8NH;
 				INFOPLIST_FILE = FaceAnalyzer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

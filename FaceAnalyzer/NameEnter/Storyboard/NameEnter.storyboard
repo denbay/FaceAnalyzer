@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ux6-bN-ffg">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -13,20 +13,20 @@
             <objects>
                 <viewController storyboardIdentifier="NameEnterViewController" id="Ux6-bN-ffg" customClass="NameEnterViewController" customModule="FaceAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1i1-bU-f13">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aim" translatesAutoresizingMaskIntoConstraints="NO" id="iyr-8q-9mJ">
-                                <rect key="frame" x="33.5" y="181" width="308" height="305.5"/>
+                                <rect key="frame" x="53" y="295.5" width="308" height="305.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="XPf-KV-gD1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="185" id="RCI-7S-cT8"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKs-hf-NRZ">
-                                <rect key="frame" x="33.5" y="568" width="308" height="54"/>
+                                <rect key="frame" x="53" y="763" width="308" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="2Pp-fO-nLE"/>
                                 </constraints>
@@ -34,15 +34,18 @@
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.5725490196078431" green="0.34509803921568627" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="continueButtonAction:" destination="Ux6-bN-ffg" eventType="touchUpInside" id="Q5a-wH-bQ7"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="KARA" textAlignment="center" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="8Bg-Of-Dzq">
-                                <rect key="frame" x="149" y="277" width="77" height="35"/>
+                                <rect key="frame" x="168.5" y="391.5" width="77" height="35"/>
                                 <color key="textColor" red="1" green="0.78915501853260595" blue="0.20958257369622069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, write your name!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bge-5q-m2J">
-                                <rect key="frame" x="91.5" y="337" width="192.5" height="20"/>
+                                <rect key="frame" x="111" y="451.5" width="192.5" height="20"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="0.38555899288914919" green="0.099260790107819283" blue="0.43174067805261174" alpha="0.67428296232876717" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>

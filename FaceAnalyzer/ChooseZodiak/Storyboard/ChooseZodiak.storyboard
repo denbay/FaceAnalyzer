@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sz3-Ft-gyS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chooze Zodiak Collection View Controller-->
+        <scene sceneID="hts-ww-n6s">
+            <objects>
+                <collectionViewController storyboardIdentifier="ChooseZodiak" id="sz3-Ft-gyS" customClass="ChoozeZodiakCollectionViewController" customModule="FaceAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="sRh-bs-O0o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.31828427310000001" green="0.082236312330000005" blue="0.35296133159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dCd-wX-xCB">
+                            <size key="itemSize" width="122" height="122"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_horoscope" id="alD-nb-5lb">
+                            <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChooseZodiak" id="in4-hL-oop" customClass="ChooseZodiakCollectionViewCell" customModule="FaceAnalyzer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="B2e-xN-1gX">
+                                    <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/21 - 04/19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-1f-l66">
+                                            <rect key="frame" x="22" y="100" width="78" height="9"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="9" id="3PO-jh-OlD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                            <color key="textColor" red="0.63621159670000005" green="0.5216953057" blue="0.69347734230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDx-to-yOE">
+                                            <rect key="frame" x="40" y="76" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.78915501850000003" blue="0.2095825737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aries" translatesAutoresizingMaskIntoConstraints="NO" id="oW3-rx-CzK">
+                                            <rect key="frame" x="19" y="0.0" width="84" height="84"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="84" id="7vw-oB-bEQ"/>
+                                                <constraint firstAttribute="height" constant="84" id="9mt-v1-1qt"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Swh-1f-l66" firstAttribute="centerX" secondItem="RDx-to-yOE" secondAttribute="centerX" id="8uO-7x-ChO"/>
+                                        <constraint firstItem="Swh-1f-l66" firstAttribute="top" secondItem="RDx-to-yOE" secondAttribute="bottom" constant="3" id="9Gm-u1-SJd"/>
+                                        <constraint firstItem="RDx-to-yOE" firstAttribute="centerX" secondItem="oW3-rx-CzK" secondAttribute="centerX" id="b9T-A9-bBA"/>
+                                        <constraint firstItem="oW3-rx-CzK" firstAttribute="top" secondItem="B2e-xN-1gX" secondAttribute="top" id="dBd-eZ-wEH"/>
+                                        <constraint firstItem="oW3-rx-CzK" firstAttribute="leading" secondItem="B2e-xN-1gX" secondAttribute="leading" constant="19" id="oVf-lE-tUI"/>
+                                        <constraint firstItem="Swh-1f-l66" firstAttribute="leading" secondItem="B2e-xN-1gX" secondAttribute="leading" constant="22" id="ppP-Bv-yIa"/>
+                                        <constraint firstItem="RDx-to-yOE" firstAttribute="top" secondItem="B2e-xN-1gX" secondAttribute="top" constant="76" id="t6t-VJ-qDF"/>
+                                        <constraint firstItem="RDx-to-yOE" firstAttribute="top" secondItem="oW3-rx-CzK" secondAttribute="bottom" constant="-8" id="vIT-Tp-3W8"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="122" height="122"/>
+                                <connections>
+                                    <outlet property="chooseZodiakImageView" destination="oW3-rx-CzK" id="anb-hc-zIO"/>
+                                    <outlet property="dateChooseZodiakLabel" destination="Swh-1f-l66" id="can-R0-SZV"/>
+                                    <outlet property="nameChooseZodiakLabel" destination="RDx-to-yOE" id="pvv-GD-aSX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="sz3-Ft-gyS" id="w9H-HR-TWz"/>
+                            <outlet property="delegate" destination="sz3-Ft-gyS" id="Ruf-Y2-gPL"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="backgroundChooseZodiakImageView" destination="alD-nb-5lb" id="KYu-LT-oiW"/>
+                        <outlet property="chooseZodiakCollectionView" destination="sRh-bs-O0o" id="Ted-g6-VDn"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PhP-oa-01G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Aries" width="79.5" height="55.5"/>
+        <image name="background_horoscope" width="375" height="812"/>
+    </resources>
+</document>

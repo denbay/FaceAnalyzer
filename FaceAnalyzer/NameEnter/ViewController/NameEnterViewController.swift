@@ -21,9 +21,13 @@ class NameEnterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        
     }
     
 }
+
+// MARK: -
+// MARK: - Configure
 
 private extension NameEnterViewController {
     
@@ -31,7 +35,6 @@ private extension NameEnterViewController {
         hideNavigationBar()
         configureContinueButtonAction()
         configureEnterNameTextField()
-        editContinueButtonAction()
     }
     
     func hideNavigationBar() {
@@ -43,15 +46,7 @@ private extension NameEnterViewController {
         continueButtonAction.layer.borderWidth = 1
         continueButtonAction.layer.borderColor = UIColor(red: 146 / 255, green: 88 / 255, blue: 154 / 255, alpha: 1).cgColor
         
-    }
-    
-    func configureEnterNameTextField() {
-        enterNameTextField.becomeFirstResponder()
-        enterNameTextField.attributedPlaceholder = NSAttributedString(string: "KARA", attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 99 / 255, green: 0 / 255, blue: 104 / 255, alpha: 1)])
-    }
-    
-    func editContinueButtonAction() {
-        if enterNameTextField.text?.isEmpty == true {
+        if enterNameTextField.text?.isEmpty == false {
             continueButtonAction.setTitleColor(.white, for: .normal)
             continueButtonAction.backgroundColor = UIColor(red: 243 / 255, green: 129 / 255, blue: 11 / 255, alpha: 1)
             let gradientLayer = CAGradientLayer()
@@ -63,8 +58,30 @@ private extension NameEnterViewController {
             gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
             gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
             gradientLayer.cornerRadius = 27
+        } else {
+            return continueButtonAction.isEnabled = false
+        }
+        
+        
     }
     
-  }
+    func configureEnterNameTextField() {
+        enterNameTextField.attributedPlaceholder = NSAttributedString(string: "YOUR NAME", attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 99 / 255, green: 0 / 255, blue: 104 / 255, alpha: 1)])
+    }
     
 }
+
+// MARK: -
+// MARK: - Action
+
+extension NameEnterViewController {
+    
+    @IBAction func continueButtonAction(_ sender: Any) {
+        let zodiakVC = UIStoryboard(name: "ChooseZodiak", bundle: nil).instantiateInitialViewController() as! ChoozeZodiakCollectionViewController
+        self.navigationController?.pushViewController(zodiakVC, animated: true)
+        //zodiakVC.modalPresentationStyle = .fullScreen
+        //present(zodiakVC, animated: true, completion: nil)
+    }
+    
+}
+

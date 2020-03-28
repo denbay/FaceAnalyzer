@@ -31,8 +31,8 @@ private extension AppDelegate {
     }
     
     func setupRootViewController() {
-        let storyboard = UIStoryboard(name: "NameEnter", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "NameEnterViewController") as! NameEnterViewController
+        let storyboard = UIStoryboard(name: "Subscription", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "Subscription") as! SubscriptionViewController
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
