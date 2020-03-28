@@ -2,3 +2,4 @@ ${PODS_ROOT}/Target Support Files/Pods-FaceAnalyzer/Pods-FaceAnalyzer-frameworks
 ${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
 ${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework
+${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework

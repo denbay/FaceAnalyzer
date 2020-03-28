@@ -29,6 +29,10 @@ class SubscriptionViewController: UIViewController {
     @IBOutlet weak var restorePurchasesLabel: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     
+    // - Manager
+    
+    private var iappManager: SubscriptionIAPManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()

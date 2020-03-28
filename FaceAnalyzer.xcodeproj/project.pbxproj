@@ -11,6 +11,7 @@
 		4887B4E1242BF977004D5153 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B4E0242BF977004D5153 /* DataBaseManager.swift */; };
 		4887B4E7242F9BAE004D5153 /* Subscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4887B4E6242F9BAE004D5153 /* Subscription.storyboard */; };
 		4887B4E9242FB103004D5153 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B4E8242FB103004D5153 /* SubscriptionViewController.swift */; };
+		4887B4EC242FF26B004D5153 /* SubscriptionIAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B4EB242FF26B004D5153 /* SubscriptionIAPManager.swift */; };
 		48D0AD722425FA1700E69E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0AD712425FA1700E69E92 /* AppDelegate.swift */; };
 		48D0AD762425FA1700E69E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0AD752425FA1700E69E92 /* ViewController.swift */; };
 		48D0AD7B2425FA1900E69E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D0AD7A2425FA1900E69E92 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		4887B4E0242BF977004D5153 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		4887B4E6242F9BAE004D5153 /* Subscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscription.storyboard; sourceTree = "<group>"; };
 		4887B4E8242FB103004D5153 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		4887B4EB242FF26B004D5153 /* SubscriptionIAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionIAPManager.swift; sourceTree = "<group>"; };
 		48D0AD6E2425FA1700E69E92 /* FaceAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D0AD712425FA1700E69E92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48D0AD752425FA1700E69E92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		4887B4E2242F9AE2004D5153 /* Subscription  */ = {
 			isa = PBXGroup;
 			children = (
+				4887B4EA242FF221004D5153 /* SubscriptionManager */,
 				4887B4E5242F9B01004D5153 /* Storyboard  */,
 				4887B4E4242F9AF7004D5153 /* ViewController */,
 				4887B4E3242F9AF1004D5153 /* Manager */,
@@ -108,6 +111,14 @@
 				4887B4E6242F9BAE004D5153 /* Subscription.storyboard */,
 			);
 			path = "Storyboard ";
+			sourceTree = "<group>";
+		};
+		4887B4EA242FF221004D5153 /* SubscriptionManager */ = {
+			isa = PBXGroup;
+			children = (
+				4887B4EB242FF26B004D5153 /* SubscriptionIAPManager.swift */,
+			);
+			path = SubscriptionManager;
 			sourceTree = "<group>";
 		};
 		48D0AD652425FA1700E69E92 = {
@@ -399,6 +410,7 @@
 				4887B4E1242BF977004D5153 /* DataBaseManager.swift in Sources */,
 				4887B4DF242BF962004D5153 /* ContentManager.swift in Sources */,
 				48D0AD722425FA1700E69E92 /* AppDelegate.swift in Sources */,
+				4887B4EC242FF26B004D5153 /* SubscriptionIAPManager.swift in Sources */,
 				48D0AD9B2426595300E69E92 /* NameEnterViewController.swift in Sources */,
 				48D0ADAF2427BDF500E69E92 /* FooterCollectionReusableView.swift in Sources */,
 				48D0AD882425FCC500E69E92 /* LogoAnimationView.swift in Sources */,
