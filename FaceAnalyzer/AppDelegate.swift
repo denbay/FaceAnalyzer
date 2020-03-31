@@ -31,9 +31,8 @@ private extension AppDelegate {
     }
     
     func setupRootViewController() {
-        let storyboard = UIStoryboard(name: "Subscription", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "Subscription") as! SubscriptionViewController
-        
+        let mainVC = UIStoryboard(storyboard: .profile).instantiateInitialViewController() as! ProfileViewController
+    
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let navigationController = UINavigationController(rootViewController: mainVC)
