@@ -13,7 +13,6 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-
     }
 
 }
@@ -26,10 +25,12 @@ private extension TabBarViewController {
     func configure() {
         configureControllers()
         tabBarAppearance()
+        showMainMenuScreen()
     }
     
     func tabBarAppearance() {
-        tabBar.backgroundColor = UIColor(red: 91 / 255, green: 34 / 255, blue: 98 / 255, alpha: 1)
+        UITabBar.appearance().backgroundColor = UIColor(red: 91 / 255, green: 34 / 255, blue: 98 / 255, alpha: 1)
+        
     }
     
     func configureControllers() {
@@ -59,6 +60,10 @@ private extension TabBarViewController {
             navController.navigationBar.isHidden = true
             return navController
         }
+    }
+    
+    func showMainMenuScreen() {
+        selectedIndex = 1
     }
 }
 

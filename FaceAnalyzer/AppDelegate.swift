@@ -31,7 +31,7 @@ private extension AppDelegate {
     }
     
     func setupRootViewController() {
-        let mainVC = UIStoryboard(storyboard: .profile).instantiateInitialViewController() as! ProfileViewController
+        let mainVC = UIStoryboard(storyboard: .chooseZodiak).instantiateInitialViewController() as! ChoozeZodiakCollectionViewController
     
         window = UIWindow(frame: UIScreen.main.bounds)
         
