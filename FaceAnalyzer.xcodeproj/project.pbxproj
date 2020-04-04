@@ -186,6 +186,7 @@
 		4887B4F92430C74C004D5153 /* Settings  */ = {
 			isa = PBXGroup;
 			children = (
+				4887B5122438B40B004D5153 /* Cell */,
 				4887B4FD2430C781004D5153 /* Storyboard */,
 				4887B4FC2430C778004D5153 /* ViewController */,
 			);
@@ -271,6 +272,13 @@
 			children = (
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4887B5122438B40B004D5153 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		48D0AD652425FA1700E69E92 = {
