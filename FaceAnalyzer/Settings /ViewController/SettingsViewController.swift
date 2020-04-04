@@ -22,6 +22,7 @@ class SettingsViewController: UIViewController {
     // - Data
     
     private var name = ["Terms of service","Privacy policy","Version","Notifications"]
+    private var smallIconName = ["termsofservice","Privacypolicy","Version","Notifications"]
     
 
     override func viewDidLoad() {
@@ -45,6 +46,7 @@ extension SettingsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as! SettingsTableViewCell
         cell.nameSettingsLabel?.text = self.name[indexPath.row]
         cell.accessoryType = .disclosureIndicator
+        cell.smallIconImageView.image = UIImage(named: self.smallIconName[indexPath.row])
         return cell
     }
 }
@@ -66,6 +68,7 @@ private extension SettingsViewController {
         configureUpgradeButton()
         hideNavigationBar()
         configureTableView()
+        configureTableViewAppearance()
     }
     
     func configureUpgradeButton() {
@@ -90,5 +93,9 @@ private extension SettingsViewController {
     func configureTableView() {
         buttonsTableView.dataSource = self
         buttonsTableView.delegate = self
+    }
+    
+    func configureTableViewAppearance() {
+        buttonsTableView.layer.cornerRadius = 10
     }
 }
