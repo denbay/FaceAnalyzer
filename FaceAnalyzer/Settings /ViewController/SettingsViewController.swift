@@ -19,6 +19,10 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var upgradeButton: UIButton!
     @IBOutlet weak var buttonsTableView: UITableView!
     
+    // - Data
+    
+    private var name = ["Terms of service","Privacy policy","Version","Notifications"]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +33,31 @@ class SettingsViewController: UIViewController {
 }
 
 // MARK: -
+// MARK: - DataSource
+
+extension SettingsViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return name.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as! SettingsTableViewCell
+        cell.nameSettingsLabel?.text = self.name[indexPath.row]
+        //cell.accessoryType = .disclosureIndicator
+        return cell
+    }
+}
+
+extension SettingsViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40.5
+    }
+    
+}
+
+// MARK: -
 // MARK: - Configure
 
 private extension SettingsViewController {
@@ -36,6 +65,7 @@ private extension SettingsViewController {
     func configure() {
         configureUpgradeButton()
         hideNavigationBar()
+        configureTableView()
     }
     
     func configureUpgradeButton() {
@@ -55,5 +85,10 @@ private extension SettingsViewController {
     
     func hideNavigationBar() {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func configureTableView() {
+        buttonsTableView.dataSource = self
+        buttonsTableView.delegate = self
     }
 }

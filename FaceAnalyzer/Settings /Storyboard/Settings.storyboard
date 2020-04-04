@@ -64,7 +64,7 @@
                                 <rect key="frame" x="31" y="318" width="313" height="232"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HFW-z0-qoR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsTableViewCell" id="HFW-z0-qoR" customClass="SettingsTableViewCell" customModule="FaceAnalyzer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="313" height="40.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HFW-z0-qoR" id="Rai-ql-PFs">
@@ -109,6 +109,11 @@
                                                 <constraint firstItem="VUz-Bx-ORr" firstAttribute="leading" secondItem="1Ux-iY-sVo" secondAttribute="trailing" constant="19" id="u47-l9-Jbe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameSettingsLabel" destination="VUz-Bx-ORr" id="bqW-Nn-9eL"/>
+                                            <outlet property="rightArrowImageView" destination="fj7-Nb-CrY" id="FR3-om-36e"/>
+                                            <outlet property="smallIconImageView" destination="1Ux-iY-sVo" id="IxC-Rd-39H"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
