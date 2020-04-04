@@ -44,7 +44,7 @@ extension SettingsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as! SettingsTableViewCell
         cell.nameSettingsLabel?.text = self.name[indexPath.row]
-        //cell.accessoryType = .disclosureIndicator
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
 }
@@ -52,7 +52,7 @@ extension SettingsViewController: UITableViewDataSource {
 extension SettingsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40.5
+        return 50
     }
     
 }
