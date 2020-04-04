@@ -34,6 +34,18 @@ class SettingsViewController: UIViewController {
 }
 
 // MARK: -
+// MARK: - Action
+
+extension SettingsViewController {
+    
+    @IBAction func upgradeButtonAction(_ sender: Any) {
+        let subVC = UIStoryboard(name: "Subscription", bundle: nil).instantiateInitialViewController() as! SubscriptionViewController
+        self.navigationController?.pushViewController(subVC, animated: true)
+        present(subVC, animated: true, completion: nil)
+    }
+}
+
+// MARK: -
 // MARK: - DataSource
 
 extension SettingsViewController: UITableViewDataSource {
