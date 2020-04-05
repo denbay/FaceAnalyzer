@@ -130,11 +130,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4DY-mp-2dQ">
-                                <rect key="frame" x="356" y="20" width="31" height="31"/>
+                                <rect key="frame" x="357" y="20" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.32651078735722555" green="0.21530932996892108" blue="0.40079688330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="XLE-O5-2Qh"/>
-                                    <constraint firstAttribute="width" constant="31" id="tKR-cG-gl4"/>
+                                    <constraint firstAttribute="height" constant="30" id="XLE-O5-2Qh"/>
+                                    <constraint firstAttribute="width" constant="30" id="tKR-cG-gl4"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="2" height="0.0"/>
                                 <state key="normal" image="close">

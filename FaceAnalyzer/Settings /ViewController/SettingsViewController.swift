@@ -11,7 +11,6 @@ import UIKit
 class SettingsViewController: UIViewController {
     
     // - UI
-    
     @IBOutlet weak var bacgroundSettingsImageView: UIImageView!
     @IBOutlet weak var iconPremiumImageView: UIImageView!
     @IBOutlet weak var upgrade1Label: UILabel!
@@ -20,7 +19,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var buttonsTableView: UITableView!
     
     // - Data
-    
     private var name = ["Terms of service","Privacy policy","Version","Notifications"]
     private var smallIconName = ["termsofservice","Privacypolicy","Version","Notifications"]
     
@@ -28,7 +26,6 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-
     }
   
 }
@@ -110,4 +107,5 @@ private extension SettingsViewController {
     func configureTableViewAppearance() {
         buttonsTableView.layer.cornerRadius = 10
     }
+    
 }

@@ -11,7 +11,6 @@ import UIKit
 class SubscriptionViewController: UIViewController {
     
     // - UI
-    
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var check1Image: UIImageView!
     @IBOutlet weak var check2Image: UIImageView!
@@ -30,13 +29,11 @@ class SubscriptionViewController: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     
     // - Manager
-    
     private var iappManager: SubscriptionIAPManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        
     }
 }
 
@@ -65,17 +62,20 @@ extension SubscriptionViewController {
     func configure() {
         hideNavigationBar()
         editStartSubscriptionButton()
+        editCloseButton()
     }
     
     func hideNavigationBar() {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func editStartSubscriptionButton() {
-
        startSubscriptionButton.titleLabel?.numberOfLines = 2
        startSubscriptionButton.setTitle("START SUBSCRIPTION", for: .normal)
-        
+    }
+    
+    func editCloseButton() {
+        closeButton.layer.cornerRadius = 15
     }
     
 }

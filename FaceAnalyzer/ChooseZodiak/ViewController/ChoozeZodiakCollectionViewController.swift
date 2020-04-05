@@ -42,9 +42,10 @@ extension ChoozeZodiakCollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChooseZodiak", for: indexPath) as! ChooseZodiakCollectionViewCell
         let zodiak = zodiaks[indexPath.row]
-        cell.chooseZodiakImageView.image = UIImage(named: zodiak.image)
-        cell.dateChooseZodiakLabel.text = zodiak.date
-        cell.nameChooseZodiakLabel.text = zodiak.zodiakName
+        //cell.chooseZodiakImageView.image = UIImage(named: zodiak.image)
+        //cell.dateChooseZodiakLabel.text = zodiak.date
+        //cell.nameChooseZodiakLabel.text = zodiak.zodiakName
+        cell.set(zodiak: zodiak)
         return cell
     }
     
@@ -78,9 +79,14 @@ extension ChoozeZodiakCollectionViewController: UICollectionViewDelegate, UIColl
 extension ChoozeZodiakCollectionViewController {
     
     func configure() {
+        configureZodiaks()
         configureCollectionView()
         hideNavigationBar()
-        configureZodiaks()
+        //updateView()
+    }
+    
+    func configureZodiaks() {
+        zodiaks = contentManager.zodiaks
     }
     
     
@@ -90,11 +96,11 @@ extension ChoozeZodiakCollectionViewController {
     }
     
     func hideNavigationBar() {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    func configureZodiaks() {
-        zodiaks = contentManager.zodiaks
-    }
+    /*func updateView() {
+        chooseZodiakCollectionView.reloadData()
+    }*/
     
 }

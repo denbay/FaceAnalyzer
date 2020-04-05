@@ -11,7 +11,6 @@ import RealmSwift
 class DataBaseManager: NSObject {
     
     // - Realm
-    
     let realm = try! Realm()
 
 }

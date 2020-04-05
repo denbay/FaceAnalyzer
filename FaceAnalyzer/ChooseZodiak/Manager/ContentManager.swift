@@ -11,7 +11,6 @@ import UIKit
 class ContentManager {
     
     // - Manager
-    
     private let dataBaseManager = DataBaseManager()
 
     func configure() {

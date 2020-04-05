@@ -18,12 +18,18 @@ class ViewController: UIViewController {
         view.addSubview(logoAnimationView)
         logoAnimationView.pinEdgesToSuperView()
         logoAnimationView.logoGifImageView.delegate = self
+        
+        func gifDidStop(sender: UIImageView) {
+            logoAnimationView.isHidden = true
+            let nextVC = UIStoryboard(storyboard: .nameEnter).instantiateInitialViewController() as! NameEnterViewController
+            navigationController?.pushViewController(nextVC, animated: true)
+        
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         logoAnimationView.logoGifImageView.startAnimatingGif()
-
     }
     
 }
@@ -32,8 +38,8 @@ extension ViewController: SwiftyGifDelegate {
     
     func gifDidStop(sender: UIImageView) {
         logoAnimationView.isHidden = true
-        let nextVC = NameEnterViewController()
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        let nextVC = UIStoryboard(storyboard: .nameEnter).instantiateInitialViewController() as! NameEnterViewController
+        navigationController?.pushViewController(nextVC, animated: true)
     
     }
 }

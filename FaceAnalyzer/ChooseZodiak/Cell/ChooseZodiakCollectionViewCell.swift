@@ -11,7 +11,6 @@ import UIKit
 class ChooseZodiakCollectionViewCell: UICollectionViewCell {
     
     // - UI
-    
     @IBOutlet weak var chooseZodiakImageView: UIImageView!
     @IBOutlet weak var dateChooseZodiakLabel: UILabel!
     @IBOutlet weak var nameChooseZodiakLabel: UILabel!
