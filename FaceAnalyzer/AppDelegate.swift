@@ -31,8 +31,8 @@ private extension AppDelegate {
     }
     
     func setupRootViewController() {
-        //let mainVC = UIStoryboard(storyboard: .subscription).instantiateInitialViewController() as! SubscriptionViewController
-        let mainVC = ViewController()
+        let mainVC = UIStoryboard(storyboard: .settings).instantiateInitialViewController() as! SettingsViewController
+        //let mainVC = ViewController()
     
         window = UIWindow(frame: UIScreen.main.bounds)
         

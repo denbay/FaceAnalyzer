@@ -8,15 +8,17 @@
 
 import UIKit
 import SwiftyGif
+import DeviceKit
 
 class LogoAnimationView: UIView {
     
     let logoGifImageView: UIImageView = {
-        guard let gifImage = try? UIImage(gifName: "logo.gif") else {
-            return UIImageView()
-        }
-        return UIImageView(gifImage: gifImage, loopCount: 1)
-    }()
+     guard let gifImage = try? UIImage(gifName: "logo.gif") else {
+     return UIImageView()
+     }
+     return UIImageView(gifImage: gifImage, loopCount: 1)
+     }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,4 +38,5 @@ class LogoAnimationView: UIView {
         logoGifImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         logoGifImageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
     }
+   
 }

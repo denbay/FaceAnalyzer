@@ -11,16 +11,13 @@ import UIKit
 class ChoozeZodiakCollectionViewController: UIViewController {
     
     // - UI
-    
     @IBOutlet var chooseZodiakCollectionView: UICollectionView!
     @IBOutlet weak var backgroundChooseZodiakImageView: UIImageView!
     
     // - Data
-    
     private var zodiaks = [ZodiakModel]()
     
     // - Manager
-    
     private let contentManager = ContentManager()
     
     

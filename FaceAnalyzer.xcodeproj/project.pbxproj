@@ -23,6 +23,9 @@
 		4887B50C2430D5F3004D5153 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B50B2430D5F3004D5153 /* StoryboardExtension.swift */; };
 		4887B5112433AA35004D5153 /* DontKnowZodiak.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4887B5102433AA35004D5153 /* DontKnowZodiak.storyboard */; };
 		4887B5142438B9B2004D5153 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B5132438B9B2004D5153 /* SettingsTableViewCell.swift */; };
+		48A6F467243A30FF002E97F1 /* logo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48A6F466243A30FF002E97F1 /* logo1.gif */; };
+		48A6F46C243A3997002E97F1 /* TermsOfService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A6F46B243A3997002E97F1 /* TermsOfService.storyboard */; };
+		48A6F46E243A457E002E97F1 /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A6F46D243A457E002E97F1 /* TermsOfServiceViewController.swift */; };
 		48D0AD722425FA1700E69E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0AD712425FA1700E69E92 /* AppDelegate.swift */; };
 		48D0AD762425FA1700E69E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0AD752425FA1700E69E92 /* ViewController.swift */; };
 		48D0AD7B2425FA1900E69E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D0AD7A2425FA1900E69E92 /* Assets.xcassets */; };
@@ -59,6 +62,9 @@
 		4887B50B2430D5F3004D5153 /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
 		4887B5102433AA35004D5153 /* DontKnowZodiak.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DontKnowZodiak.storyboard; sourceTree = "<group>"; };
 		4887B5132438B9B2004D5153 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		48A6F466243A30FF002E97F1 /* logo1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo1.gif; sourceTree = "<group>"; };
+		48A6F46B243A3997002E97F1 /* TermsOfService.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsOfService.storyboard; sourceTree = "<group>"; };
+		48A6F46D243A457E002E97F1 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewController.swift; sourceTree = "<group>"; };
 		48D0AD6E2425FA1700E69E92 /* FaceAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D0AD712425FA1700E69E92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48D0AD752425FA1700E69E92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -284,6 +290,31 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		48A6F468243A3955002E97F1 /* TermsOfService */ = {
+			isa = PBXGroup;
+			children = (
+				48A6F46A243A397B002E97F1 /* Storyboard */,
+				48A6F469243A3973002E97F1 /* ViewController */,
+			);
+			path = TermsOfService;
+			sourceTree = "<group>";
+		};
+		48A6F469243A3973002E97F1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48A6F46D243A457E002E97F1 /* TermsOfServiceViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48A6F46A243A397B002E97F1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48A6F46B243A3997002E97F1 /* TermsOfService.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		48D0AD652425FA1700E69E92 = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +336,7 @@
 		48D0AD702425FA1700E69E92 /* FaceAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				48A6F468243A3955002E97F1 /* TermsOfService */,
 				4887B50D2433AA03004D5153 /* DontKnowZodiak */,
 				4887B4F92430C74C004D5153 /* Settings  */,
 				4887B4F82430C740004D5153 /* Profile */,
@@ -354,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				48D0AD91242632DE00E69E92 /* logo.gif */,
+				48A6F466243A30FF002E97F1 /* logo1.gif */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -515,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D0AD7E2425FA1900E69E92 /* LaunchScreen.storyboard in Resources */,
+				48A6F46C243A3997002E97F1 /* TermsOfService.storyboard in Resources */,
 				4887B4F52430C4F2004D5153 /* MainMenu.storyboard in Resources */,
 				4887B5112433AA35004D5153 /* DontKnowZodiak.storyboard in Resources */,
 				4887B5012430C7B9004D5153 /* Profile.storyboard in Resources */,
@@ -523,6 +557,7 @@
 				4887B4E7242F9BAE004D5153 /* Subscription.storyboard in Resources */,
 				4887B5052430C814004D5153 /* Settings.storyboard in Resources */,
 				48D0AD7B2425FA1900E69E92 /* Assets.xcassets in Resources */,
+				48A6F467243A30FF002E97F1 /* logo1.gif in Resources */,
 				48D0AD9924264F8900E69E92 /* NameEnter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +614,7 @@
 				4887B4F72430C511004D5153 /* MainMenuViewController.swift in Sources */,
 				48D0ADA22427615000E69E92 /* ChoozeZodiakCollectionViewController.swift in Sources */,
 				48D0ADAD2427BDE900E69E92 /* HeaderCollectionReusableView.swift in Sources */,
+				48A6F46E243A457E002E97F1 /* TermsOfServiceViewController.swift in Sources */,
 				48D0AD762425FA1700E69E92 /* ViewController.swift in Sources */,
 				48D0AD8B2425FD4800E69E92 /* LogoConstraints.swift in Sources */,
 				4887B4E1242BF977004D5153 /* DataBaseManager.swift in Sources */,

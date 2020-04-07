@@ -1,4 +1,5 @@
 PODS:
+  - DeviceKit (2.3.0)
   - Realm (4.4.0):
     - Realm/Headers (= 4.4.0)
   - Realm/Headers (4.4.0)
@@ -8,23 +9,26 @@ PODS:
   - SwiftyStoreKit (0.15.0)
 
 DEPENDENCIES:
+  - DeviceKit (~> 2.0)
   - RealmSwift
   - SwiftyGif
   - SwiftyStoreKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - DeviceKit
     - Realm
     - RealmSwift
     - SwiftyGif
     - SwiftyStoreKit
 
 SPEC CHECKSUMS:
+  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
   Realm: e125f464884cda953ebefe70c671b75b03b81b9b
   RealmSwift: 33656a42bd300959a081fc13347376bc478071af
   SwiftyGif: b85c6b33a9411859d9e1db998b6a8214aea942df
   SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
 
-PODFILE CHECKSUM: 1f9fdd4dabbb167046b67dab6a53bbd29f14fd33
+PODFILE CHECKSUM: 012048149923f7abf2929befe762dd6c326bc61d
 
 COCOAPODS: 1.8.4

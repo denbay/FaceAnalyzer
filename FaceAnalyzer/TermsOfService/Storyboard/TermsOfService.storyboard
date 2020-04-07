@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cGT-Hb-ukt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Terms Of Service View Controller-->
+        <scene sceneID="PaT-I5-5pZ">
+            <objects>
+                <viewController storyboardIdentifier="TermsOfServiceViewController" id="cGT-Hb-ukt" customClass="TermsOfServiceViewController" customModule="FaceAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iCk-E2-dgj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNG-Nn-jrE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbw-CE-f42">
+                                        <rect key="frame" x="0.0" y="5" width="414" height="808"/>
+                                        <color key="backgroundColor" red="0.21858305519999999" green="0.039974254510000001" blue="0.27060604100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shW-4C-uwO">
+                                        <rect key="frame" x="30" y="10" width="354" height="788"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="788" id="KDu-xO-Wzt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.97264214085621847" green="0.91749311138512035" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Pbw-CE-f42" firstAttribute="width" secondItem="jNG-Nn-jrE" secondAttribute="width" id="1Hl-Ud-ht1"/>
+                                    <constraint firstItem="Pbw-CE-f42" firstAttribute="centerY" secondItem="jNG-Nn-jrE" secondAttribute="centerY" id="2dQ-1W-V7O"/>
+                                    <constraint firstItem="Pbw-CE-f42" firstAttribute="height" secondItem="jNG-Nn-jrE" secondAttribute="height" priority="250" id="87R-0M-Qz4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pbw-CE-f42" secondAttribute="trailing" id="H36-k6-OZ0"/>
+                                    <constraint firstItem="Pbw-CE-f42" firstAttribute="centerX" secondItem="jNG-Nn-jrE" secondAttribute="centerX" id="M6d-8c-yma"/>
+                                    <constraint firstItem="shW-4C-uwO" firstAttribute="top" secondItem="jNG-Nn-jrE" secondAttribute="top" constant="10" id="QGA-VI-W1A"/>
+                                    <constraint firstAttribute="bottom" secondItem="shW-4C-uwO" secondAttribute="bottom" constant="15" id="TsT-5V-ZAq"/>
+                                    <constraint firstItem="shW-4C-uwO" firstAttribute="leading" secondItem="jNG-Nn-jrE" secondAttribute="leading" constant="30" id="ffi-TR-Pmd"/>
+                                    <constraint firstAttribute="trailing" secondItem="shW-4C-uwO" secondAttribute="trailing" constant="30" id="oC2-CR-AHi"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pbw-CE-f42" secondAttribute="bottom" id="uTU-Ga-ieM"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21858305519999999" green="0.039974254510000001" blue="0.27060604100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="jNG-Nn-jrE" firstAttribute="bottom" secondItem="vDj-0T-toM" secondAttribute="bottom" id="2vW-QW-4ij"/>
+                            <constraint firstItem="jNG-Nn-jrE" firstAttribute="trailing" secondItem="vDj-0T-toM" secondAttribute="trailing" id="3Bm-9Q-VDG"/>
+                            <constraint firstItem="jNG-Nn-jrE" firstAttribute="leading" secondItem="vDj-0T-toM" secondAttribute="leading" id="EOn-vs-ATP"/>
+                            <constraint firstItem="jNG-Nn-jrE" firstAttribute="top" secondItem="vDj-0T-toM" secondAttribute="top" id="GbJ-gB-zrm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vDj-0T-toM"/>
+                    </view>
+                    <connections>
+                        <outlet property="areaOfTextView" destination="Pbw-CE-f42" id="HNh-ZK-UY9"/>
+                        <outlet property="termsLabel" destination="shW-4C-uwO" id="yCQ-At-TNW"/>
+                        <outlet property="textScrollView" destination="jNG-Nn-jrE" id="Vhi-ap-PZq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WcR-Ew-GhE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="86.383928571428569"/>
+        </scene>
+    </scenes>
+</document>

@@ -11,7 +11,6 @@ import UIKit
 class NameEnterViewController: UIViewController {
     
     // - UI
-
     @IBOutlet weak var continueButtonAction: UIButton!
     @IBOutlet weak var aimImage: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!

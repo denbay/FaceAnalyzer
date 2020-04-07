@@ -25,6 +25,10 @@ class ViewController: UIViewController {
             navigationController?.pushViewController(nextVC, animated: true)
         
         }
+        
+        func hideNavigationBar() {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -58,6 +58,14 @@ extension SettingsViewController: UITableViewDataSource {
         cell.smallIconImageView.image = UIImage(named: self.smallIconName[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       buttonsTableView.deselectRow(at: indexPath, animated: true)
+       if indexPath.row == 0 {
+       let termsVC = UIStoryboard(name: "TermsOfService", bundle: nil).instantiateInitialViewController() as! TermsOfServiceViewController
+        navigationController?.pushViewController(termsVC, animated: true)
+       }
+    }
 }
 
 extension SettingsViewController: UITableViewDelegate {
@@ -96,7 +104,7 @@ private extension SettingsViewController {
     }
     
     func hideNavigationBar() {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func configureTableView() {
