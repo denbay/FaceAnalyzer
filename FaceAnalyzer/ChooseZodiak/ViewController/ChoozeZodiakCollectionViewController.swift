@@ -79,7 +79,7 @@ extension ChoozeZodiakCollectionViewController {
         configureZodiaks()
         configureCollectionView()
         hideNavigationBar()
-        //updateView()
+        updateView()
     }
     
     func configureZodiaks() {
@@ -96,8 +96,8 @@ extension ChoozeZodiakCollectionViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    /*func updateView() {
+    func updateView() {
         chooseZodiakCollectionView.reloadData()
-    }*/
+    }
     
 }

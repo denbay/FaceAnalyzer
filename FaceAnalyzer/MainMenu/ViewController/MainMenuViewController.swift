@@ -9,7 +9,14 @@
 import UIKit
 
 class MainMenuViewController: UIViewController {
-
+    
+    @IBOutlet weak var headerImageView: UIImageView!
+    @IBOutlet weak var rotateImageView: UIImageView!
+    @IBOutlet weak var rotateLabel: UILabel!
+    @IBOutlet weak var aimImageView: UIImageView!
+    @IBOutlet weak var description1Label: UILabel!
+    @IBOutlet weak var description2Label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

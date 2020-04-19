@@ -116,4 +116,8 @@ private extension SettingsViewController {
         buttonsTableView.layer.cornerRadius = 10
     }
     
+    func refresh() {
+        
+    }
+    
 }
