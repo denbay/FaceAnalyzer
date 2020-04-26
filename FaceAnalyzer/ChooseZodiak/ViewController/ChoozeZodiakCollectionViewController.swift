@@ -13,6 +13,8 @@ class ChoozeZodiakCollectionViewController: UIViewController {
     // - UI
     @IBOutlet var chooseZodiakCollectionView: UICollectionView!
     @IBOutlet weak var backgroundChooseZodiakImageView: UIImageView!
+    @IBOutlet weak var headerLabel: UILabel!
+    @IBOutlet weak var footerButton: UIButton!
     
     // - Data
     private var zodiaks = [ZodiakModel]()
@@ -71,6 +73,20 @@ extension ChoozeZodiakCollectionViewController: UICollectionViewDelegate, UIColl
 }
 
 // MARK: -
+// MARK: - Action
+
+extension ChoozeZodiakCollectionViewController {
+    
+    @IBAction func footerButtonAction(_ sender: Any) {
+        let dontKnowZodiakVC = UIStoryboard(name: "DontKnowZodiak", bundle: nil).instantiateInitialViewController() as! DontKnowZodiakViewController
+        self.navigationController?.pushViewController(dontKnowZodiakVC, animated: true)
+        //zodiakVC.modalPresentationStyle = .fullScreen
+        //present(zodiakVC, animated: true, completion: nil)
+    }
+    
+}
+
+// MARK: -
 // MARK: - Configure
 
 extension ChoozeZodiakCollectionViewController {
@@ -79,6 +95,7 @@ extension ChoozeZodiakCollectionViewController {
         configureZodiaks()
         configureCollectionView()
         hideNavigationBar()
+        configureFooterButton()
         updateView()
     }
     
@@ -94,6 +111,12 @@ extension ChoozeZodiakCollectionViewController {
     
     func hideNavigationBar() {
         navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func configureFooterButton() {
+        footerButton.layer.cornerRadius = 20
+        footerButton.layer.borderWidth = 1.8
+        footerButton.layer.borderColor = UIColor(red: 243 / 255, green: 201 / 255, blue: 91 / 255, alpha: 1).cgColor
     }
     
     func updateView() {

@@ -14,7 +14,7 @@ class ContentManager {
     private let dataBaseManager = DataBaseManager()
 
     func configure() {
-        if dataBaseManager.zodiaks.count != 0 { return }
+        if zodiaks.count != 0 { return }
         let aries = ZodiakModel.aries()
         let taurus = ZodiakModel.taurus()
         let gemini = ZodiakModel.gemini()
@@ -27,8 +27,7 @@ class ContentManager {
         let capricorn = ZodiakModel.capricorn()
         let aquarius = ZodiakModel.aquarius()
         let pisces = ZodiakModel.pisces()
-        dataBaseManager.save(zodiaks: zodiaks)
-
+        dataBaseManager.save(zodiaks: [aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces])
     }
 
 }
@@ -52,5 +51,6 @@ extension ContentManager {
     var zodiaks: [ZodiakModel] {
         return dataBaseManager.zodiaks
     }
+    
 }
 

@@ -14,6 +14,9 @@ class ZodiakModel: Object {
     @objc dynamic var date = ""
     @objc dynamic var image = ""
     
+    override class func primaryKey() -> String? {
+        return "zodiakName"
+    }
     
     static func aries() -> ZodiakModel {
         let zodiak = ZodiakModel()

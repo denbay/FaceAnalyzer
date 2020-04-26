@@ -13,12 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // - UI
     var window: UIWindow?
-
+    
+    // - Manager
+    private let contentManager = ContentManager()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         configure()
         return true
     }
-
+    
 }
 
 // MARK: -
@@ -27,22 +30,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
     
     func configure() {
+        configureContentManager()
         setupRootViewController()
     }
     
-    func setupRootViewController() {
-        let mainVC = UIStoryboard(storyboard: .settings).instantiateInitialViewController() as! SettingsViewController
-        //let mainVC = ViewController()
+    func configureContentManager() {
+        contentManager.configure()
+    }
     
+    func setupRootViewController() {
+        //let mainVC = UIStoryboard(storyboard: .chooseZodiak).instantiateInitialViewController() as! ChoozeZodiakCollectionViewController
+        let mainVC = ViewController()
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let navigationController = UINavigationController(rootViewController: mainVC)
         
         if let window = window {
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
+            window.rootViewController = navigationController
+            window.makeKeyAndVisible()
         }
-       
+        
     }
     
 }
