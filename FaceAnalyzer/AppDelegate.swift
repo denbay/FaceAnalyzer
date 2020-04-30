@@ -39,15 +39,14 @@ private extension AppDelegate {
     }
     
     func setupRootViewController() {
-        //let mainVC = UIStoryboard(storyboard: .chooseZodiak).instantiateInitialViewController() as! ChoozeZodiakCollectionViewController
-        let mainVC = ViewController()
+        //        let navigationController = UINavigationController(rootViewController: mainVC)
         
+        //        let mainVC = UIStoryboard(storyboard: .mainMenu).instantiateInitialViewController() as! MainMenuViewController
+        //        let mainVC = TabBarViewController()
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let navigationController = UINavigationController(rootViewController: mainVC)
-        
         if let window = window {
-            window.rootViewController = navigationController
+            window.rootViewController = TabBarViewController()
             window.makeKeyAndVisible()
         }
         

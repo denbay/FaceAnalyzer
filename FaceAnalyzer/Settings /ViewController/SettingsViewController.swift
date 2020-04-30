@@ -27,6 +27,12 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         configure()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        showTabBar()
+    }
+    
+    
   
 }
 
@@ -37,8 +43,7 @@ extension SettingsViewController {
     
     @IBAction func upgradeButtonAction(_ sender: Any) {
         let subVC = UIStoryboard(name: "Subscription", bundle: nil).instantiateInitialViewController() as! SubscriptionViewController
-        self.navigationController?.pushViewController(subVC, animated: true)
-        present(subVC, animated: true, completion: nil)
+        navigationController?.pushViewController(subVC, animated: true)
     }
 }
 
@@ -68,6 +73,9 @@ extension SettingsViewController: UITableViewDataSource {
     }
 }
 
+// MARK: -
+// MARK: - Delegate
+
 extension SettingsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -83,7 +91,7 @@ private extension SettingsViewController {
     
     func configure() {
         configureUpgradeButton()
-        hideNavigationBar()
+        showTabBar()
         configureTableView()
         configureTableViewAppearance()
     }
@@ -91,20 +99,23 @@ private extension SettingsViewController {
     func configureUpgradeButton() {
         upgradeButton.layer.cornerRadius = 22
         upgradeButton.setTitleColor(.white, for: .normal)
-        upgradeButton.backgroundColor = UIColor(red: 243 / 255, green: 129 / 255, blue: 11 / 255, alpha: 1)
+
         let gradientLayer = CAGradientLayer()
-        upgradeButton.frame = upgradeButton.bounds
-        upgradeButton.layer.insertSublayer(gradientLayer, at: 0)
+        
         let backgroundColor = UIColor(red: 243 / 255, green: 129 / 255, blue: 11 / 255, alpha: 1)
         let bottomGradientColor = UIColor(red: 231 / 255, green: 181 / 255, blue: 46 / 255, alpha: 1)
+        
         gradientLayer.colors = [backgroundColor.cgColor, bottomGradientColor.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
         gradientLayer.cornerRadius = 22
+        
+        gradientLayer.frame = upgradeButton.bounds
+        upgradeButton.layer.insertSublayer(gradientLayer, at: 0)
     }
     
-    func hideNavigationBar() {
-        navigationController?.setNavigationBarHidden(true, animated: true)
+    func showTabBar() {
+        tabBarController?.tabBar.isHidden = false
     }
     
     func configureTableView() {
@@ -115,9 +126,5 @@ private extension SettingsViewController {
     func configureTableViewAppearance() {
         buttonsTableView.layer.cornerRadius = 10
     }
-    
-    func refresh() {
-        
-    }
-    
+
 }

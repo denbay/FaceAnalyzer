@@ -48,7 +48,7 @@ extension SubscriptionViewController {
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
-        
+        navigationController?.popViewController(animated: true)
     }
     
 }
@@ -60,13 +60,14 @@ extension SubscriptionViewController {
 extension SubscriptionViewController {
     
     func configure() {
-        hideNavigationBar()
+        hideNavigationItems()
         editStartSubscriptionButton()
         editCloseButton()
     }
     
-    func hideNavigationBar() {
+    func hideNavigationItems() {
         navigationController?.setNavigationBarHidden(true, animated: true)
+        tabBarController?.tabBar.isHidden = true
     }
     
     func editStartSubscriptionButton() {
@@ -77,5 +78,7 @@ extension SubscriptionViewController {
     func editCloseButton() {
         closeButton.layer.cornerRadius = 15
     }
+    
+    
     
 }

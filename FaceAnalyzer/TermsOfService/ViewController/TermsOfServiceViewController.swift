@@ -11,6 +11,7 @@ import UIKit
 class TermsOfServiceViewController: UIViewController {
     
     // - UI
+
     @IBOutlet weak var termsLabel: UILabel!
     @IBOutlet weak var textScrollView: UIScrollView!
     @IBOutlet weak var areaOfTextView: UIView!
