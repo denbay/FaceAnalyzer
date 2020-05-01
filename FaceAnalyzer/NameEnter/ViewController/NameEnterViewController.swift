@@ -20,10 +20,10 @@ class NameEnterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        
     }
     
 }
+
 
 // MARK: -
 // MARK: - Configure
@@ -41,12 +41,14 @@ private extension NameEnterViewController {
     }
     
     func configureContinueButtonAction() {
-        continueButtonAction.layer.cornerRadius = 27
-        continueButtonAction.layer.borderWidth = 1
-        continueButtonAction.layer.borderColor = UIColor(red: 146 / 255, green: 88 / 255, blue: 154 / 255, alpha: 1).cgColor
+       
+        let tap = UIGestureRecognizer(target: self.view, action: #selector(UIView.resignFirstResponder))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
         
         if enterNameTextField.text?.isEmpty == false {
             continueButtonAction.setTitleColor(.white, for: .normal)
+            continueButtonAction.layer.cornerRadius = 27
             continueButtonAction.backgroundColor = UIColor(red: 243 / 255, green: 129 / 255, blue: 11 / 255, alpha: 1)
             let gradientLayer = CAGradientLayer()
             gradientLayer.frame = continueButtonAction.bounds
@@ -58,7 +60,11 @@ private extension NameEnterViewController {
             gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
             gradientLayer.cornerRadius = 27
         } else {
-            return continueButtonAction.isEnabled = false
+            continueButtonAction.layer.cornerRadius = 27
+            continueButtonAction.layer.borderWidth = 1
+            continueButtonAction.layer.borderColor = UIColor(red: 146 / 255, green: 88 / 255, blue: 154 / 255, alpha: 1).cgColor
+            continueButtonAction.isEnabled = false
+            return
         }
         
         
@@ -83,4 +89,3 @@ extension NameEnterViewController {
     }
     
 }
-
