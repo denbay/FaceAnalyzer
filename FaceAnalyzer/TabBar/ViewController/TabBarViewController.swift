@@ -29,7 +29,9 @@ private extension TabBarViewController {
     }
     
     func tabBarAppearance() {
-        UITabBar.appearance().backgroundColor = UIColor(red: 91 / 255, green: 34 / 255, blue: 98 / 255, alpha: 1)
+        tabBar.barTintColor = UIColor(red: 91 / 255, green: 34 / 255, blue: 98 / 255, alpha: 1)
+        tabBar.isTranslucent = false
+        tabBar.unselectedItemTintColor = .white
     }
     
     func configureControllers() {

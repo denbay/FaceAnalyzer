@@ -49,9 +49,14 @@ extension MainMenuViewController: UICollectionViewDataSource {
 
 extension MainMenuViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width / 2.5, height: collectionView.frame.size.height)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+    }
+    
 }
 
 // MARK: -
@@ -60,8 +65,9 @@ extension MainMenuViewController: UICollectionViewDelegate, UICollectionViewDele
 extension MainMenuViewController {
     
     func configure() {
-        configureCollectionView()
         configureDescriptionLabel()
+        iconsPosition()
+        configureCollectionView()
         //showTabBarViewController()
     }
     
@@ -79,9 +85,14 @@ extension MainMenuViewController {
         }
     }
     
+    func iconsPosition() {
+        mainMenuCollectionView.contentInset = UIEdgeInsets(top: 0, left: -1.0, bottom: 0, right: 1.0)
+    }
+    
+    
     func configureCollectionView() {
-        mainMenuCollectionView.delegate = self
         mainMenuCollectionView.dataSource = self
+        mainMenuCollectionView.delegate = self
     }
     
 //    func showTabBarViewController() {

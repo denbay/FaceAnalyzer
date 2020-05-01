@@ -10,6 +10,7 @@ import UIKit
 
 class MainMenuCollectionViewCell: UICollectionViewCell {
     
+    // - UI
     @IBOutlet weak var mainMenuButtonImage: UIImageView!
     
     func configureImageShape() {
